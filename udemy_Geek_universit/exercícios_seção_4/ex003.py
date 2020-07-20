@@ -1,4 +1,4 @@
-3. # Peça ao usuário para digitar três valores inteiros e imprima a soma entre eles
+3.  # Peça ao usuário para digitar três valores inteiros e imprima a soma entre eles
 
 n1 = int(input('Digite o 1º valor: '))
 n2 = int(input('Digite o 2º valor: '))
