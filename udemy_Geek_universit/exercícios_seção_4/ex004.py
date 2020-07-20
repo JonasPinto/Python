@@ -1,4 +1,4 @@
-4. # leia um número real e imprima o resultado do quadrado desse número
+# leia um número real e imprima o resultado do quadrado desse número
 
 n = float(input('Digite um valor qualquer'))
 q = n ** 2 

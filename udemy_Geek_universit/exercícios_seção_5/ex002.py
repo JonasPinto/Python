@@ -1,5 +1,5 @@
 """
-02. Leia um número fornecido pelo usuário. Se esse número for positivo, caucule a raiz quadrada do número. Se o número
+Leia um número fornecido pelo usuário. Se esse número for positivo, caucule a raiz quadrada do número. Se o número
 for negativo, mostre uma mensagem dizendo que o número é inválido.
 """
 num = float(input('Digite um número: '))
