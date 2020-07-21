@@ -20,7 +20,7 @@ print(not ativo)
 
 # Ou (or)
 """
-É uma operação binaria, ou seja depende de dois valores .ou um ou outro deve ser verdadeiro
+É uma operação binaria, ou seja depende de dois valores ou um ou outro deve ser verdadeiro
 
 True or True -> True
 True or false -> True
