@@ -23,12 +23,11 @@ int numero = 32;
 exemplo em java:
 int numero = 32;
 """
-numero = 32
-print(numero)
-print(type(numero))
-                             #     <-  exemplos de variavel global
-numero = 'jonas'
-print(numero)
-print(type(numero))
+# exemplo de variável global
+x = 32 
 
-
+# exemplo de variavel local
+def func(): # Dois pontos definem um novo bloco
+    x = 1
+    
+print(x) # Ao printar a variavel x o resultado será 32 por ser uma variavel global
