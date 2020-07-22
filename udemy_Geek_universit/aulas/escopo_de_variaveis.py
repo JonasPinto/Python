@@ -27,7 +27,10 @@ int numero = 32;
 x = 32 
 
 # exemplo de variavel local
-def func(): # Dois pontos definem um novo bloco
-    x = 1
-    
-print(x) # Ao printar a variavel x o resultado será 32 por ser uma variavel global
+def local():
+    x = 0
+    print(x)
+# Ao printar a variavel x o resultado será 32 por ser uma variavel global
+# Se a função for chamada ela mostrara o valor de x dentro dela 
+print(x)
+local()
