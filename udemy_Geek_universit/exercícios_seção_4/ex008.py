@@ -2,4 +2,4 @@
 
 k = float(input('Digite a tempratura em k° kelvin: '))
 c = k - 273.15
-print(f'{k}°kelvin são {c:.2f}° celcius')
+print(f'{k}°kelvin são respectivamente {c:.2f}° celcius')
