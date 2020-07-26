@@ -8,5 +8,26 @@
 alt = float(input('Digite a sua altura: '))
 pes = float(input('Digite o seu peso: '))
 
-
+if alt < 1.20:
+    if pes < 60:
+        print('Classificação [ A ]')
+    elif pes >= 60 and pes <= 90 :
+        print('Classificação [ D ]')
+    elif pes > 90:
+        print('Classificação [ G ]')
+elif alt >= 1.20 and alt <= 1.70:
+    if pes < 60:
+        print('Classificação [ B ]')
+    elif pes >= 60 and pes <= 90:
+        print('Classificação [ E ]')
+    elif pes > 90:
+        print('Classificação [ H ]')
+elif alt > 1.70:
+    if pes < 60:
+        print('Classificação [ C ]')
+    elif pes >= 60 and pes <= 90:
+        print('Classificação [ F ]')
+    elif pes > 90:
+        print('Classificação [ I ]')
+        
              
