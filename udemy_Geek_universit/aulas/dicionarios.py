@@ -189,7 +189,7 @@ print(usuario)
 print(type(usuario))
 
 # O metodo fromkeys recebe dois parâmetros: um interável e um valor
-# Ele vai gerar para cada valor do iteravel uma chave e iará atribuir a esta chave o valor informado
+# Ele vai gerar para cada valor do iteravel uma chave e irá atribuir a esta chave o valor informado
 
 veja = {}.fromkeys('teste', 'valor')
 print(veja)
