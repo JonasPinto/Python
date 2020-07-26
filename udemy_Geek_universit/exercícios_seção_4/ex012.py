@@ -1,4 +1,4 @@
-#   12.	Leia uma distância em milhas e apresente-a convertida em quilômetros K = 1.61 * M
+# Leia uma distância em milhas e apresente-a convertida em quilômetros K = 1.61 * M
 
 m = float(input('Digite a distância em milhas: '))
 km = m * 1.60934
