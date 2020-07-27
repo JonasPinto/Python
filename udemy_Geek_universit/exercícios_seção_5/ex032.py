@@ -29,4 +29,4 @@ while op != 's':
         if iten['codigo'] == cod:
             pg += iten['preço'] * qtd  
     op = input('[ S ] Sair [ ENTER ] Continuar ')           
-print(f'Total = R${pg:.2f}')
+print(f'Total = R$ {pg:.2f}')
