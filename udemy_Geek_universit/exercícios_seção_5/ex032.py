@@ -10,7 +10,6 @@ Cheeseburguer          104      1.70
 Suco                   105      2.20
 Refrigerante           106      1.00
 """
-op = ''
 
 cardapio = [{'nome': 'cachorro quente', 'codigo': 100, 'preço': 1.20},
             {'nome': 'bauru simples',   'codigo': 101, 'preço': 1.30},
@@ -20,17 +19,14 @@ cardapio = [{'nome': 'cachorro quente', 'codigo': 100, 'preço': 1.20},
             {'nome': 'suco',            'codigo': 105, 'preço': 2.20},
             {'nome': 'refrigerante',    'codigo': 106, 'preço': 1.00}]
 
-escolhidos = []
+op = ''
 pg = 0
-qtd = 0
-while op != 's':
-    cod = int(input('Digite o codigo do pedido: '))
-    i = 0
-    for _ in cardapio:
-        pedido = cardapio[i]
-        i += 1
-        if pedido['codigo'] == cod:
-             pg += pedido['preço']         
-    op = input('[ S ] Sair      [ ENTER ] Continuar ')
 
+while op != 's':
+    cod = int(input('CODIGO DO PEDIDO  '))
+    qtd = int(input('QUANTIDADE  '))
+    for iten in cardapio:
+        if iten['codigo'] == cod:
+            pg += iten['preço'] * qtd  
+    op = input('[ S ] Sair [ ENTER ] Continuar ')           
 print(f'Total = R${pg:.2f}')
