@@ -1,4 +1,4 @@
-# 10.	Leia uma velocidade em KM/h (quilômetros por hora) e apresente-a convertida em M/S (metros por segundo).
+# Leia uma velocidade em KM/h (quilômetros por hora) e apresente-a convertida em M/S (metros por segundo).
 # M = K / 3.6
 
 print('--------------------------------')

@@ -1,4 +1,4 @@
-#16.Leia um valor de comprimento em polegadas e apresente-o convertido em centímetros. C = P * 2.54
+# Leia um valor de comprimento em polegadas e apresente-o convertido em centímetros. C = P * 2.54
 
 p = float(input('Digite o comprimento em polegadas: '))
 c = p * 2.54

@@ -1,4 +1,4 @@
-#15.Leia um ângulo em radianos e apresente-o convertido em graus G = R * 180 / PI
+# Leia um ângulo em radianos e apresente-o convertido em graus G = R * 180 / PI
 
 from math import pi
 r = float(input('Digite o valor em radianos: '))
