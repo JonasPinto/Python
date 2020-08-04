@@ -1,4 +1,4 @@
-# 29. Leia quatro notas caucule a média aritimetica e mostre-a na tela para o usuario.
+# Leia quatro notas caucule a média aritimetica e mostre-a na tela para o usuario.
 
 n1 = float(input('Digite a 1º nota: '))
 n2 = float(input('Digite a 2º nota: '))
