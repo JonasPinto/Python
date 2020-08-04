@@ -1,4 +1,4 @@
-# 36. Leia a altura e o raio de um cilindro e mostre o volume V = pi * r² * h
+# Leia a altura e o raio de um cilindro e mostre o volume V = pi * r² * h
 
 h = float(input('Digite a altura do cilindro: '))
 r = float(input('Digite o raio do cilindro: '))
