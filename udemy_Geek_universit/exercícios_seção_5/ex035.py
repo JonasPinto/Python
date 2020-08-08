@@ -6,7 +6,7 @@ mes_str = {1: '31Janeiro', 2: '', 3: '31Março', 4: '30Abril', 5: '31Maio', 6: '
 
 data = str(input('digite a data no formato DD/MM/YY\n'))
 if len(data) == 10:
-    dia = int(data[:2])
+    dia = data[:2]
     mes = int(data[3:5])
     ano = int(data[6:10])
 else:
@@ -17,16 +17,20 @@ if (ano % 4 == 0) and ((ano % 100 != 0) or (ano % 400 == 0)):
     mes_str[2] = '29Fevereiro'
 else:
     inf_biss = 'não é bissexto'
-    mes_str = '28Fevereiro'
+    mes_str[2] = '28Fevereiro'
 
-if mes >= 1 and mes <= 12:
+if (mes >= 1 and mes <= 12) and int(dia) > 0:
     for i in mes_str:
-        mes_out = mes_str[mes]   
+        mes_out = mes_str[mes]
+        dia_out = mes_out[0:2] 
+        if dia <= dia_out:
+            valido = 'válida'
+        else:
+            valido = 'inválida'
 else: 
     print('O mês digitado é inválido')
     sys.exit
-
-print(f'A data {data} é {}, o ano {ano} {inf_biss} e o mê de {mes_out[2:]} tem {mes_out[0:2]} dias')
+print(f'A data {data} é {valido}, o ano {ano} {inf_biss} e o mês de {mes_out[2:]} tem {mes_out[0:2]} dias')
 
 
    
