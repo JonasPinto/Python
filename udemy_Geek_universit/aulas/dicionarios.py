@@ -6,7 +6,7 @@ Dicionários são coleções do tipo chave/ valor
 Dicionarios são representados por {} chaves
 print (type({}))
 OBS: sobre dicionarios
-    - chave e valor são representados por dois pontos -> 'chave: valor'
+    - chave e valor são representados por dois pontos -> 'chave': 'valor'
     - tanto chave quanto valor podem ser de qualquer tipo de dado
     - podemos misturar tipos de dados
 
