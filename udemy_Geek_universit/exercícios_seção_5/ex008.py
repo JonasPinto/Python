@@ -1,5 +1,5 @@
 """
-08. Faça um programa que leia 2 notas de um aluno, verifique se as notas são válidas e exiba ma tela a média destas notas
+Faça um programa que leia 2 notas de um aluno, verifique se as notas são válidas e exiba ma tela a média destas notas
 Uma nota valida deve ser, obrigatóriamente, um valor entre 0.0 e 10.0, onde caso não possua um valor válido, este
 fato deve ser informado ao usuário e o programa termina.
 """
