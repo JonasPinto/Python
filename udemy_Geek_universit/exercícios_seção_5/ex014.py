@@ -9,7 +9,7 @@ av = float(input('Digite a nota da avaliação: '))
 exf = float(input('Digite a nota do exame final: '))
 
 if (tr > 10 or tr < 0) or (av > 10 or av < 0) or (exf > 10 or exf < 0):
-        print('NOTA INVÁLIDA')
+        print('ALGUMA NOTA DIGITADA É INVALIDA')
         sys.exit()
 
 
