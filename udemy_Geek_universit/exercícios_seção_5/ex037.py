@@ -15,9 +15,9 @@ print('Formato de hora 24h 00:00')
 chegada = input('Digite o horaio de entrada -> ')
 saida = input('Digite o horario de saída    -> ')
 
-hora_chegada = int(chegada[:2])
-minutos_chegada = int(chegada[3:])
+minutos_chegada = (int(chegada[:2]) * 60) + int(chegada[3:])
+minutos_saida = (int(saida[:2]) * 60) + int(saida[3:])
 
 
-print(hora_chegada)
 print(minutos_chegada)
+print(minutos_saida)
