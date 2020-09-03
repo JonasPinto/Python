@@ -1,4 +1,6 @@
 """
+https://docs.python.org/3/library/collections.html?highlight=collections#collections.Counter
+
 Módulo collections - Counter (contador)
 
 Collections -> High-performance Datetypes
