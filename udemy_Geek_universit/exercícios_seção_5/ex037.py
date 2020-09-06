@@ -8,6 +8,7 @@ As tarifas de certo parque de estacionamento são as seguintes:
 O número de horas a pagar é sempre inteiro arredondado por excesso. Deste modo, quem estacionar durante 61 minutos pagará por duas horas, que é o mesmo que pagaria se tivesse permanecido 120 minnutos. Pretende-se criar um programa que, lidos pelo teclado os momentos de chegada e partida, escreva na tela o preço cobrado pelo estacionamento. Admite-se que a chegada e a partida se dão com intervalo não superior a 24 horas. Portanto, se uma dada hora de chegada for superior á da partida, isso não é uma cituação de erro, antes significará que a partida ocorreu no dia seguinte ao da chegada.   
 """
 
+"""
 print('-----------------------------------------')
 print('             PARQUIMETRO                 ')
 print('-----------------------------------------')
@@ -16,8 +17,17 @@ print('Formato de hora 24h 00:00')
 chegada = input('Digite o horaio de entrada -> ')
 saida = input('Digite o horario de saída    -> ')
 
-minutos_chegada = (int(chegada[:2]) * 60) + int(chegada[3:])
-minutos_saida = (int(saida[:2]) * 60) + int(saida[3:])
+s = '2015/08/05 08:12:23'
+t = '2015/08/09 08:13:23'
+
+
+
+
+print(chegada)
+print(type(chegada))
+"""
+
+
 
 """
 if tot_horas <= 2:
