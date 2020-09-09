@@ -5,7 +5,7 @@ Módulo collections - Counter (contador)
 
 Collections -> High-performance Datetypes
 
-outer -> Recebe um iteravel como parametro e cria um objeto do tipo Collections Counter que é paracido com um dicionário, contendo como chave o elemento da lista passada como parametro e como valor a quantidade de ocorrência desse elemento
+counter -> Recebe um iteravel como parametro e cria um objeto do tipo Collections Counter que é paracido com um dicionário, contendo como chave o elemento da lista passada como parametro e como valor a quantidade de ocorrência desse elemento
 
 # Exemplo 1
 # Podemos utilizar qualquer iterável, aqui usamos uma lista
