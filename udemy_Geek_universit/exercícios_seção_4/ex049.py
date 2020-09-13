@@ -3,12 +3,12 @@ Faça um programa que leia um horario (Hora,Minuto,Segundo) de inicio e a duraç
 experiencia biologica. O programa deve retornar com o novo horario (Hora, Minuto, Segundo)
 de termino da mesma.
 """
-print(f'Digite abaixo o horario de inicio do experimento')
-hi = str(input('Horas : Minutos : Segundos '))
-h = int(hi[0] + hi[1])
-m = int(hi[3] + hi[4])
-s = int(hi[6] + hi[7])
+
+hi = input('Digite o horario de inicio do experimento\nFormato hh:mm:ss -> ')
 sd = int(input('Quantos segundos de duração: '))
+h = int(hi[:2])
+m = int(hi[3:5])
+s = int(hi[6:])
 st = (h * 3600) + (m * 60) + sd + s
 dc = st // 86400
 sgr = st % 86400
