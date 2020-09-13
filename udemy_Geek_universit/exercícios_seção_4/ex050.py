@@ -18,8 +18,6 @@ idade = int(idade)
 monthVeri = int(monthVeri)
 dateVeri = int(dateVeri)
 
-print(monthVeri)
-"""
 if monthVeri < 0:
     idade = idade - 1
 elif dateVeri < 0 and monthVeri == 0:
@@ -28,4 +26,3 @@ elif dateVeri < 0 and monthVeri == 0:
 
 #lets print the age now
 print(f'Você tem {idade} anos de idade')
-"""
