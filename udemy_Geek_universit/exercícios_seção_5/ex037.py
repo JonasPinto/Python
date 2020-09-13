@@ -14,15 +14,14 @@ print('-----------------------------------------')
 print('Formato de data dd/mm')
 print('Formato de hora 24h 00:00')
 
-dt_chegada = input('Data de entrada -> ')
-chegada = input('Hora de entrada -> ')
-dt_saida = input('Data de saída -> ')
-saida = input('Hora de saída -> ')
+# dt_chegada = input('Data de entrada -> ')
+hr_chegada = input('Hora de entrada -> ')
+# dt_saida = input('Data de saída -> ')
+hr_saida = input('Hora de saída -> ')
 
-if dt_saida == dt_chegada:
+# if dt_saida == dt_chegada:
 
 
-"""
 if tot_horas <= 2:
     tot_pg = tot_horas * 1
 elif tot_horas == 3 or tot_horas == 4:
@@ -30,5 +29,5 @@ elif tot_horas == 3 or tot_horas == 4:
 else:
     tot_pg = tot_horas * 2
 
+print(tot_horas)
 print(f'O total a pagar é R${tot_pg:.2f}')
-"""
