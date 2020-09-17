@@ -14,21 +14,35 @@ print('-----------------------------------------')
 print('Formato de data dd/mm')
 print('Formato de hora 24h 00:00')
 
-# dt_chegada = input('Data de entrada -> ')
+dt_chegada = input('Data de entrada -> ')
 hr_chegada = input('Hora de entrada -> ')
-# dt_saida = input('Data de saída -> ')
+dt_saida = input('Data de saída -> ')
 hr_saida = input('Hora de saída -> ')
 
-# if dt_saida == dt_chegada:
-mn_tot_c = int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])
-mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
-tot_horas = mn_tot_s - mn_tot_c 
-
-if tot_horas <= 2:
-    tot_pg = tot_horas * 1
-elif tot_horas == 3 or tot_horas == 4:
-    tot_pg = tot_horas * 1.4
+if hr_saida == '00:00':
+    hr_saida = '24:00'
+    
+if dt_saida == dt_chegada:
+    mn_tot_c = int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])
+    mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
+    tot_m = mn_tot_s - mn_tot_c
 else:
-    tot_pg = tot_horas * 2
+    mn_tot_c = 1440 - (int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])) 
+    mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
+    tot_m = mn_tot_c + mn_tot_s
+
+if tot_m <= 60:
+    tot_pg = 1
+elif tot_m > 60 and tot_m <= 120:
+    tot_pg = 2
+elif tot_m > 120 and tot_m <= 180:
+    tot_pg = 4.20
+elif tot_m > 180 and tot_m <= 240: 
+    tot_pg = 5.6
+else:
+    if tot_m % 60 == 0:
+        tot_pg = (tot_m // 60) * 2 
+    else:
+        tot_pg = (tot_m // 60) * 2  + 2
 
 print(f'O total a pagar é R${tot_pg:.2f}')
