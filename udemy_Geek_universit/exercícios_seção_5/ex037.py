@@ -20,7 +20,9 @@ hr_chegada = input('Hora de entrada -> ')
 hr_saida = input('Hora de saída -> ')
 
 # if dt_saida == dt_chegada:
-
+mn_tot_c = int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])
+mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
+tot_horas = mn_tot_s - mn_tot_c 
 
 if tot_horas <= 2:
     tot_pg = tot_horas * 1
@@ -29,5 +31,4 @@ elif tot_horas == 3 or tot_horas == 4:
 else:
     tot_pg = tot_horas * 2
 
-print(tot_horas)
 print(f'O total a pagar é R${tot_pg:.2f}')
