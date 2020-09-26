@@ -334,3 +334,24 @@ print(lista)
 print(nova)
 # A copia via atribuição modifica a lista atual e a anterior. isso em python é cahmado de shellow copy
 """
+def ValorLista():
+    for i in range(1,5):
+        lista.append(int(input(f'Digite o Valor da sua prova {i}: ')))
+
+def Media():
+    lista.sort()
+    s = 0
+
+    for i in range(len(lista)):
+        lista[i]
+        s = s + lista[i]   
+    m = s/4
+    return m
+
+
+lista = []
+ValorLista()
+print(lista)
+
+nota_media = Media()
+print(nota_media)
