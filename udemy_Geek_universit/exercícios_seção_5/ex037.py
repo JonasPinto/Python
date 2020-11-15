@@ -30,19 +30,20 @@ else:
     mn_tot_c = 1440 - (int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])) 
     mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
     tot_m = mn_tot_c + mn_tot_s
+    tot_t = tot_m + (int(dt_saida[:2]) - int(dt_chegada[:2])) * 1440
 
-if tot_m <= 60:
+if tot_t <= 60:
     tot_pg = 1
-elif tot_m > 60 and tot_m <= 120:
+elif tot_t > 60 and tot_t <= 120:
     tot_pg = 2
-elif tot_m > 120 and tot_m <= 180:
+elif tot_t > 120 and tot_t <= 180:
     tot_pg = 4.20
-elif tot_m > 180 and tot_m <= 240: 
+elif tot_t > 180 and tot_t <= 240: 
     tot_pg = 5.6
 else:
-    if tot_m % 60 == 0:
-        tot_pg = (tot_m // 60) * 2 
+    if tot_t % 60 == 0:
+        tot_pg = (tot_t // 60) * 2 
     else:
-        tot_pg = (tot_m // 60) * 2  + 2
+        tot_pg = (tot_t // 60) * 2  + 2
 
 print(f'O total a pagar é R${tot_pg:.2f}')
