@@ -25,12 +25,12 @@ if hr_saida == '00:00':
 if dt_saida == dt_chegada:
     mn_tot_c = int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])
     mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
-    tot_m = mn_tot_s - mn_tot_c
+    tot_t = mn_tot_s - mn_tot_c
 else:
-    mn_tot_c = 1440 - (int(hr_chegada[:2]) * 60 + int(hr_chegada[3:])) 
+    mn_tot_c = 1440 - (int(hr_chegada[:2]) * 60 + int(hr_chegada[3:]))
+    dias_estacionado = (int(dt_saida[:2]) - int(dt_chegada[:2])) - 1
     mn_tot_s = int(hr_saida[:2]) * 60 + int(hr_saida[3:]) 
-    tot_m = mn_tot_c + mn_tot_s
-    tot_t = tot_m + (int(dt_saida[:2]) - int(dt_chegada[:2])) * 1440
+    tot_t = dias_estacionado * 1440 + mn_tot_c + mn_tot_s  
 
 if tot_t <= 60:
     tot_pg = 1
@@ -47,3 +47,4 @@ else:
         tot_pg = (tot_t // 60) * 2  + 2
 
 print(f'O total a pagar é R${tot_pg:.2f}')
+
