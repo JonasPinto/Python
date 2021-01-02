@@ -20,8 +20,8 @@ if (dia > 0 and dia <= 31) and (mes > 0 and mes < 13) and (ano > 0 and ano <= 20
         if dia <= 31:
             res = 'valida'
     if mes == 4 or mes == 6 or mes == 9 or mes == 11:
-        if dia > 30:
-            res = res
+         if dia <= 30:
+            res = 'valida'
 else:
     res = res 
 
