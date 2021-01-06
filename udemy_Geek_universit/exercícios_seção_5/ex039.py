@@ -11,6 +11,7 @@ Use a tabela abaixo para caucular o salário reajustado deste funcionário e imp
   Até 2000,00           10%            De 7 a 10 anos       300,00
   Acima de 2000,00   Sem reajuste      Mais de 10 anos      500,00
 '''
+from sys import exit
 
 sal_atual = int(input('Digite o valor do salário atual : '))
 tim_work = int(input('Digite o tempo de serviço em anos\ncaso não tenha um ano completo digite zero : '))
@@ -34,13 +35,7 @@ if sal_atual > 1500 and sal_atual <= 2000 :
     sal_atuali = sal_atual + (sal_atual * 0.10)
     reajuste = 10
 
-if sal_atual > 2000 :
-    sal_atuali = sal_atual
-
-if tim_work < 1 :
-    bonus = bonus
-
-if tim_work > 1 and tim_work <= 3:
+if tim_work > 0 and tim_work <= 3:
     bonus = bonus + 100
 
 if tim_work > 3 and tim_work <= 6:
@@ -52,5 +47,19 @@ if tim_work > 6 and tim_work <= 10:
 if tim_work > 10:
     bonus = bonus + 500
 
+if sal_atual > 2000 or tim_work < 1:
+   if sal_atual > 2000 and tim_work < 1:
+      print(f'O salário de R$ {sal_atual} não terá direito á reajuste e também não terá direito a bônus por tempo de trabalho Totalizando R$ {sal_atual}')
+      exit()
 
+   if sal_atual > 2000:
+      print(f'O salário de R$ {sal_atual} não tem direito á reajuste mas receberá R$ {bonus} de bônus por tempo de trabalho Totalizando R$ {sal_atual + bonus}')
+      exit()
+
+   if tim_work < 1:
+      print(f'O salário de R$ {sal_atual} receberá {reajuste} % de reajuste + mas não terá direito á bônus por tempo de trabalho Totalizando R$ {sal_atuali}')
+      exit()
+   
 print(f'O salário de R$ {sal_atual} receberá {reajuste} % de reajuste + R$ {bonus} de bônus por tempo de trabalho Totalizando R$ {sal_atuali + bonus}')
+
+
