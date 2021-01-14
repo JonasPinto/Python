@@ -9,11 +9,26 @@ Faça um algoritmo que caucule o IMC de uma pessoa e mostre sua classificação 
           35,0 - 39,9                Obesidade Grau II(severa)
           >= 40,0                    Obesidade Grau III(mórbida)
 '''
-import math
+from math import pow
 
-altura = float(input('Digite a altura: '))
+altura = (float(input('Digite a altura: ')))
 peso = float(input('Digite o peso: '))
 
-imc = peso / math.sqrt(altura)
+imc = peso / pow(altura, 2)
+cla = ''
 
-print(imc)
+if imc < 18.5:
+    cla = 'Abaixo do peso'
+elif imc > 18.5 and imc <= 24.9:
+    cla = 'com Peso normal' 
+elif imc > 24.9 and imc <= 29.9:
+    cla = 'com Sobrepeso'
+elif imc > 29.9 and imc <= 34.9:
+    cla = 'com Obesidade Grau I'
+elif imc > 34.9 and imc <= 39.9:
+    cla = 'com Obesidade Grau II (severa)'
+elif imc >= 40:
+    cla = 'com Obesidade grau III (mórbida)'
+    
+
+print(f'IMC = [{imc:.2f}]\nVocê está {cla} ')
