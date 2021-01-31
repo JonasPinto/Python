@@ -1,10 +1,10 @@
 '''
-Faça um programa que leia um número inteiro positivo N e imprima todos os números naturais de 0 até N em ordem decrecente
+Faça um programa que leia um número inteiro positivo N e imprima todos os números naturais de N até 0 em ordem decrecente
 '''
-import time
+from time import sleep
 
 n = int(input('Digite um número inteiro positivo: '))
-for i in range(0, n + 1):
-    time.sleep(0.4)
-    print(n, end=' ')
-    n -= 1
+for i in range(n, -1, -1):
+    # sleep(0.1)
+    print(i, end=' ')
+    
