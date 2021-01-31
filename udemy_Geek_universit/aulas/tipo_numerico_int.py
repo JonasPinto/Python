@@ -3,9 +3,9 @@ dados do tipo númerico
 
 5 / 2     retorna float (com casas decimais)
 int(5/2) cast é a indicação de tipo de dado para ser convertido
-5 // 2   retorna o inteiro da divisão (sem casas decimais)z
-5 % 2    retorna o resto da divisão  % -> modo
-5 ** 2   ** -> elevado
+5 // 2   retorna o inteiro da divisão (sem casas decimais)
+5 % 2    retorna o resto da divisão  % -> mode
+5 ** 2   ** -> potenciação
 5 * 2   retorna multiplicação
 5 + 2   retorna a soma
 5 - 2   retorna a subtração
