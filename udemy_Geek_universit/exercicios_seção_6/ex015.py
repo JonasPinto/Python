@@ -11,4 +11,3 @@ while True:
         break
 print(var)
 print(lista)
-print(type(var))
