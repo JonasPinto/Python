@@ -1,5 +1,5 @@
 '''
-Faça um programa que um número inteiro positivo impar N e imprima todos os números impares de 1 até N em ordem crescente
+Faça um programa que leia um número inteiro positivo impar N e imprima todos os números impares de 1 até N em ordem crescente
 '''
 from random import random
 lista = []
