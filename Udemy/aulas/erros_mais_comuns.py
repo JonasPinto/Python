@@ -77,9 +77,26 @@ Exemplos KeyError
 a)
 dic = {'curso': 'python'}
 print(dic['jonas'])
+
+
+7 - AttributeError -> Ocorre quando uma variável não tem um atributo/função.
+
+Exwmplos de AttributeError 
+
+a)
+tupla = (11, 2, 31, 4)
+print(tuple.sort()) 
+
+
+8 - IndentationError -> Ocorre quando não respeitamos a indentação do python (4 espaços) ou recuo em um bloco
+
+Exemplos de IdentationError
+
+a)
+def nova():
+print('jonas')
+
+OBS: Exeptions e Erros são a mesma coisa em python.
+OBS: Importante ler e prestar atenção na saída de erro.
 """
 
-dic = {'curso': 'python'}
-print(dic['jonas'])
-
-frase = dict
